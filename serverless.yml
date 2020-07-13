@@ -1,0 +1,22 @@
+service: sfea
+
+plugins:
+  # - serverless-s3-sync
+  # - serverless-esbuild
+  - serverless-cloudformation-sub-variables
+  # - serverless-cloudside-plugin
+
+provider:
+  name: aws
+  timeout: 30
+  memorySize: 1024
+  runtime: nodejs12.x
+
+resources:
+  # Cognito Resources
+  - ${file(./infrastructure/authentication/UserPool.yml)}
+  - ${file(./infrastructure/authentication/UserPoolClient.yml)}
+  - ${file(./infrastructure/authentication/HostedUi.yml)}
+  - ${file(./infrastructure/authentication/IdentityPool.yml)}
+  - ${file(./infrastructure/authentication/CognitoAuthorizedRole.yml)}
+  - ${file(./infrastructure/authentication/IdentityRoleMapping.yml)}

@@ -1,0 +1,10 @@
+# Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
+Resources:
+  IdentityPool:
+    Type: "AWS::Cognito::IdentityPool"
+    Properties:
+      IdentityPoolName: ${self:service}-${opt:stage}
+      AllowUnauthenticatedIdentities: false
+      CognitoIdentityProviders:
+        - ClientId: "#{UserPoolClient}"
+          ProviderName: "#{UserPool.ProviderName}"

@@ -1,0 +1,8 @@
+# Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html
+Resources:
+  IdentityPoolRoleMapping:
+    Type: "AWS::Cognito::IdentityPoolRoleAttachment"
+    Properties:
+      IdentityPoolId: "#{IdentityPool}"
+      Roles:
+        authenticated: "#{CognitoAuthorizedRole.Arn}"
