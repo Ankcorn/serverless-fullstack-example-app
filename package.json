@@ -10,7 +10,6 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "serverless": "^1.74.1",
-    "serverless-cloudformation-sub-variables": "^0.2.1",
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-esbuild": "^1.4.0",
     "serverless-s3-sync": "^1.14.4"

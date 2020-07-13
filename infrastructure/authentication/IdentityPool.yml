@@ -6,5 +6,5 @@ Resources:
       IdentityPoolName: ${self:service}-${opt:stage}
       AllowUnauthenticatedIdentities: false
       CognitoIdentityProviders:
-        - ClientId: "#{UserPoolClient}"
-          ProviderName: "#{UserPool.ProviderName}"
+        - ClientId: !Ref UserPoolClient
+          ProviderName: !GetAtt UserPool.ProviderName

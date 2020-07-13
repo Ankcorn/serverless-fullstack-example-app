@@ -4,4 +4,4 @@ Resources:
     Type: AWS::Cognito::UserPoolDomain
     Properties:
       Domain: ${self:service}-${opt:stage}
-      UserPoolId: "#{UserPool}"
+      UserPoolId: !Ref UserPool
