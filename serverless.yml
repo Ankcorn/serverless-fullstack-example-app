@@ -1,7 +1,7 @@
 service: sfea
 
 plugins:
-  # - serverless-s3-sync
+  - serverless-s3-sync
   # - serverless-esbuild
   - serverless-cloudformation-sub-variables
   # - serverless-cloudside-plugin
