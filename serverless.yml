@@ -1,10 +1,5 @@
 service: sfea
 
-plugins:
-  # - serverless-s3-sync
-  # - serverless-esbuild
-  # - serverless-cloudside-plugin
-
 provider:
   name: aws
   timeout: 30
@@ -19,3 +14,15 @@ resources:
   - ${file(./infrastructure/authentication/IdentityPool.yml)}
   - ${file(./infrastructure/authentication/CognitoAuthorizedRole.yml)}
   - ${file(./infrastructure/authentication/IdentityRoleMapping.yml)}
+
+  # Database Resources
+  - ${file(./infrastructure/database/Dynamo.yml)}
+
+  # Gateway Resources
+  - ${file(./infrastructure/gateway/Certificate.yml)}
+  - ${file(./infrastructure/gateway/Distribution.yml)}
+  - ${file(./infrastructure/gateway/HostedZone.yml)}
+  - ${file(./infrastructure/gateway/RecordSet.yml)}
+
+  # Website Resources
+  - ${file(./infrastructure/website/Bucket.yml)}
