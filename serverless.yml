@@ -1,5 +1,16 @@
 service: sfea
 
+plugins:
+  - serverless-s3-sync
+  # - serverless-esbuild
+  # - serverless-cloudside-plugin
+
+custom:
+  s3Sync:
+    - bucketName:
+        Ref: WebsiteBucket
+      localDir: build
+
 provider:
   name: aws
   timeout: 30
