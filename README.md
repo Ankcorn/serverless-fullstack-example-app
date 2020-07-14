@@ -14,3 +14,12 @@ This doesnt come at the expense of developer productivity, I have also considere
 * Demonstration on how to test at each stage of your applications lifesycle (dev, staging, prod)
 
 (Yes we will even test in prod 🦄)
+
+
+#### Infrastructure
+
+* [Authentication](infrastructure/authentication/README.md)
+* [Database](infrastructure/database/README.md)
+* [Gateway](infrastructure/gateway/README.md)
+* [Graphql](infrastructure/graphql/README.md)
+* [Website](infrastructure/website/README.md)
