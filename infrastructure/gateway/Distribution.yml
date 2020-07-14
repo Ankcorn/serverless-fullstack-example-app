@@ -6,6 +6,7 @@ Resources:
       DistributionConfig:
         Aliases:
           - ${self:custom.CNAME}
+        IPV6Enabled: true
         ViewerCertificate:
           AcmCertificateArn:
             Ref: Certificate

@@ -3,4 +3,4 @@ Resources:
   Certificate:
     Type: AWS::CertificateManager::Certificate
     Properties:
-      DomainName: ankcorn.dev
+      DomainName: ${self:custom.Domain}
