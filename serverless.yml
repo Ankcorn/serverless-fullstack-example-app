@@ -6,6 +6,8 @@ plugins:
   # - serverless-cloudside-plugin
 
 custom:
+  # Add your own domain here
+  Domain: example.com
   s3Sync:
     - bucketName:
         Ref: WebsiteBucket
