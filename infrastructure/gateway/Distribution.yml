@@ -1,1 +1,34 @@
 # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html
+Resources:
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - ${self:custom.CNAME}
+        ViewerCertificate:
+          AcmCertificateArn:
+            Ref: Certificate
+          MinimumProtocolVersion: TLSv1.1_2016
+          SslSupportMethod: sni-only
+        DefaultCacheBehavior:
+          TargetOriginId: WebApp
+          ViewerProtocolPolicy: "redirect-to-https"
+          Compress: true
+          ForwardedValues:
+            QueryString: false
+            Cookies:
+              Forward: none
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+        Enabled: true
+        Origins:
+          - Id: WebApp
+            DomainName:
+              GetAtt: WebsiteURL.WebsiteURL
+            CustomOriginConfig:
+              HTTPPort: 80
+              HTTPSPort: 443
+              OriginProtocolPolicy: http-only

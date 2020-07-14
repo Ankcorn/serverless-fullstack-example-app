@@ -1,0 +1,8 @@
+Resources:
+  WebsiteBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${self:service}-${self:custom.stage}-website
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: index.html

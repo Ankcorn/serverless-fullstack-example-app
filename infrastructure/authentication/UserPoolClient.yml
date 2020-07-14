@@ -6,7 +6,8 @@ Resources:
       ClientName: ${self:service}-${opt:stage}
       GenerateSecret: true
       AllowedOAuthFlowsUserPoolClient: true
-      UserPoolId: !Ref UserPool
+      UserPoolId:
+        Ref: UserPool
       SupportedIdentityProviders:
         - COGNITO
       AllowedOAuthFlows:

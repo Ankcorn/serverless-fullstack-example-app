@@ -13,6 +13,4 @@ This doesnt come at the expense of developer productivity, I have also considere
 * Seemless local development of each serverless function
 * Demonstration on how to test at each stage of your applications lifesycle (dev, staging, prod)
 
-(Yes we will test in prod 🦄)
-
-
+(Yes we will even test in prod 🦄)

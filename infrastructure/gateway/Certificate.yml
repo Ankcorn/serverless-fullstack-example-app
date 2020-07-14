@@ -1,5 +1,6 @@
 # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
-mycert:
-  Type: AWS::CertificateManager::Certificate
-  Properties:
-    DomainName: example.com
+Resources:
+  Certificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: ankcorn.dev
