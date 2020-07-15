@@ -1,6 +1,6 @@
 # [WIP] The Best Serverless Fullstack Example App
 
-Bold clame right? Maybe but most serverless examples leave me wanting more. They often have great aspects but fail to put together the complete picture of how good application development with the serverless framework can be. Because of this I have had to work through the pain over overly complex serverless configuration, brittle tooling attempting to recreate aws on your laptop and constant mistakes in my iam permissions.
+Bold claim right? Maybe but most serverless examples leave me wanting more. They often have great aspects but fail to put together the complete picture of how good application development with the serverless framework can be. Because of this I have had to work through the pain over overly complex serverless configuration, brittle tooling attempting to recreate aws on your laptop and constant mistakes in my iam permissions.
 
 This template puts together everything I have learnt to show you how building serverless can be done. This example will be
 
