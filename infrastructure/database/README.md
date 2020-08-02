@@ -10,11 +10,11 @@ Between them with some glue (hehe) joining them together you can effectively ser
 
 ## DynamoDb
 
-[Dynamo.yml](Dynamo.yml) contains the configuration for the signle dynamodb table that powers this application. The configuration here is standard and will look the same accross most applications leveraging DynamoDb Single Table Design.
+[Dynamo.yml](Dynamo.yml) contains the configuration for the single dynamodb table that powers this application. The configuration here is standard and will look the same accross most applications leveraging DynamoDb Single Table Design.
 
 The purpose of this starter is not too teach single table design but my hope is it serves as an easy to understand reference. I recomend learning more about single table design before starting to build your own application using dynamodb.
 
-Here is a link to all the resources that really helped me along the way when learning all about dynamodb data modelling.
+Here is a link to all the resources that  helped me when learning all about dynamodb data modelling.
 
 * [Rick Houlihan - Advanced Design Patterns for DynamoDB](https://www.youtube.com/watch?v=HaEPXoXVf2k)
 * [Alex DeBrie - DynamoDb Guide](https://www.dynamodbguide.com)
