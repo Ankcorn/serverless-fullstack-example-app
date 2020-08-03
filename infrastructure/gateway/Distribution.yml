@@ -4,14 +4,12 @@ Resources:
     Type: AWS::CloudFront::Distribution
     Properties:
       DistributionConfig:
-        Aliases:
-          - ${self:custom.CNAME}
         IPV6Enabled: true
-        ViewerCertificate:
-          AcmCertificateArn:
-            Ref: Certificate
-          MinimumProtocolVersion: TLSv1.1_2016
-          SslSupportMethod: sni-only
+        # ViewerCertificate:
+        #   AcmCertificateArn:
+        #     Ref: Certificate
+        #   MinimumProtocolVersion: TLSv1.1_2016
+        #   SslSupportMethod: sni-only
         DefaultCacheBehavior:
           TargetOriginId: WebApp
           ViewerProtocolPolicy: "redirect-to-https"
