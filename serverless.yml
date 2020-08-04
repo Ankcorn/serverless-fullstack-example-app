@@ -1,17 +1,22 @@
-service: sfea
+service: owl
 plugins:
   - serverless-s3-sync
+  - serverless-cloudformation-sub-variables
   # - serverless-esbuild
   # - serverless-cloudside-plugin
 
 custom:
   stage: ${opt:stage, 'dev'}
   # Add your own domain here
-  Domain: example.com
+  Domains:
+    default: ${self:custom.stage}.serverlessowl.dev
+    production: serverlessowl.dev
+  Domain: ${self:custom.Domains.${self:custom.stage}, self:custom.Domains.default}
   s3Sync:
-    - bucketName:
-        Ref: WebsiteBucket
+    - bucketName: ${self:service}-${self:custom.stage}-website
       localDir: build
+      defaultContentType: text/html
+      acl: public-read
 
 provider:
   name: aws
@@ -35,10 +40,8 @@ resources:
   # - ${file(./infrastructure/database/Dynamo.yml)}
 
   # Gateway Resources
-  # - ${file(./infrastructure/gateway/Certificate.yml)}
-  # - ${file(./infrastructure/gateway/Distribution.yml)}
-  # - ${file(./infrastructure/gateway/HostedZone.yml)}
-  # - ${file(./infrastructure/gateway/RecordSet.yml)}
+  - ${file(./infrastructure/gateway/Distribution.yml)}
+  - ${file(./infrastructure/gateway/RecordSets.yml)}
 
   # Website Resources
   - ${file(./infrastructure/website/Bucket.yml)}

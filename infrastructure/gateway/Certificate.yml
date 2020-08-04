@@ -1,6 +1,0 @@
-# Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
-Resources:
-  Certificate:
-    Type: AWS::CertificateManager::Certificate
-    Properties:
-      DomainName: ${self:custom.Domain}

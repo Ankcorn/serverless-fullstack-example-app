@@ -1,0 +1,22 @@
+# Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html
+Resources:
+  RecordSetGroup:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: Z1PA6795UKMFR9
+      RecordSets:
+        - Name: dev.serverlessowl.dev
+          HostedZoneId: Z1PA6795UKMFR9
+          AliasTarget:
+            DNSName: !GetAtt CloudFrontDistribution.DomainName
+            HostedZoneId: Z1PA6795UKMFR9
+          Type: A
+  # DNSRecordIPV6:
+  #   Type: AWS::Route53::RecordSet
+  #   Properties:
+  #     Name: dev.${self:custom.Domain}
+  #     HostedZoneId: Z0188743OUCHJ6ICB8FQ
+  #     AliasTarget:
+  #       DNSName: !GetAtt CloudFrontDistribution.DomainName
+  #       HostedZoneId: Z0188743OUCHJ6ICB8FQ
+  #     Type: AAAA

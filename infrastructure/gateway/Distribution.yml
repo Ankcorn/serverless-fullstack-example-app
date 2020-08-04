@@ -4,12 +4,13 @@ Resources:
     Type: AWS::CloudFront::Distribution
     Properties:
       DistributionConfig:
+        Aliases:
+          - "dev.serverlessowl.dev"
         IPV6Enabled: true
-        # ViewerCertificate:
-        #   AcmCertificateArn:
-        #     Ref: Certificate
-        #   MinimumProtocolVersion: TLSv1.1_2016
-        #   SslSupportMethod: sni-only
+        ViewerCertificate:
+          AcmCertificateArn: arn:aws:acm:us-east-1:260235234243:certificate/ad674a44-e633-4208-98f3-7a85f842eef9
+          MinimumProtocolVersion: TLSv1.1_2016
+          SslSupportMethod: sni-only
         DefaultCacheBehavior:
           TargetOriginId: WebApp
           ViewerProtocolPolicy: "redirect-to-https"
@@ -25,8 +26,7 @@ Resources:
         Enabled: true
         Origins:
           - Id: WebApp
-            DomainName:
-              GetAtt: WebsiteURL.WebsiteURL
+            DomainName: ${self:service}-${self:custom.stage}-website.s3-website-eu-west-1.amazonaws.com
             CustomOriginConfig:
               HTTPPort: 80
               HTTPSPort: 443
