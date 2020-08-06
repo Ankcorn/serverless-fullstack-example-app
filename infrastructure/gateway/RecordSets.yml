@@ -3,14 +3,14 @@ Resources:
   RecordSetGroup:
     Type: AWS::Route53::RecordSetGroup
     Properties:
-      HostedZoneId: Z1PA6795UKMFR9
+      HostedZoneName: serverlessowl.dev
       RecordSets:
         - Name: dev.serverlessowl.dev
-          HostedZoneId: Z1PA6795UKMFR9
-          AliasTarget:
-            DNSName: !GetAtt CloudFrontDistribution.DomainName
-            HostedZoneId: Z1PA6795UKMFR9
+          HostedZoneName: serverlessowl.dev
           Type: A
+          AliasTarget:
+            HostedZoneId: Z0188743OUCHJ6ICB8FQ
+            DNSName: !GetAtt CloudFrontDistribution.DomainName
   # DNSRecordIPV6:
   #   Type: AWS::Route53::RecordSet
   #   Properties:
