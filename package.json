@@ -24,7 +24,7 @@
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "website:start": "npm run watch:css && react-scripts start",
     "website:build": "npm run build:css && react-scripts build",
-    "website:invalidate": "aws cloudfront create-invalidation --distribution-id $npm_config_cloudfront --paths '/index.html'",
+    "website:invalidate": "aws cloudfront create-invalidation --distribution-id $REACT_APP_CLOUD_FRONT_DISTRIBUTION --paths '/index.html'",
     "website:sync": "aws s3 sync --acl public-read --region eu-west-1 --endpoint-url http://s3-accelerate.amazonaws.com build s3://$npm_config_bucket"
   },
   "eslintConfig": {
