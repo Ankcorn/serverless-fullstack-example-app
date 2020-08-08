@@ -1,6 +1,6 @@
 # [WIP] Serverless Fullstack Example App
 
-I'm Building this because I'm not 100% happy with any of the existing serverless templates or examples. They often miss out steps, are only backend focussed, or don't consider the development and testing experience.
+I'm building this because I'm not 100% happy with any of the existing serverless templates or examples. They often miss out steps, are only backend focussed, or don't consider the development and testing experience.
 
 To achieve this this example will demonstrate how too
 * Completely setup all your infrastructure Infrastructure As Code
