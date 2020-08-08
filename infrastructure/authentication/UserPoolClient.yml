@@ -18,6 +18,6 @@ Resources:
         - ALLOW_REFRESH_TOKEN_AUTH
         - ALLOW_USER_SRP_AUTH
       CallbackURLs:
-        - https://${self:custom.Domain}
+        - ${self:custom.Callback}
       LogoutURLs:
-        - https://${self:custom.Domain}
+        - ${self:custom.Callback}

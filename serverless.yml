@@ -1,21 +1,38 @@
 service: owl
 plugins:
   - serverless-cloudformation-sub-variables
-  # - serverless-esbuild
-  # - serverless-cloudside-plugin
+  - serverless-export-outputs
 
 custom:
   stage: ${opt:stage, 'dev'}
 
   Domains:
     default: ${self:custom.stage}.serverlessowl.dev
+    local: localhost:3000
     production: serverlessowl.dev
   Domain: ${self:custom.Domains.${self:custom.stage}, self:custom.Domains.default}
+
+  Callbacks:
+    default: https://${self:custom.Domain}
+    local: http://${self:custom.Domain}
+  Callback: ${self:custom.Callbacks.${self:custom.stage}, self:custom.Callbacks.default}
 
   devExperiences:
     default: cloud
     local: local
   devExperience: ${self:custom.devExperiences.${self:custom.stage}, self:custom.devExperiences.default}
+
+  exportOutputs:
+    reactapp: true
+    include:
+      - AwsRegion: eu-west-1
+      - UserPoolId
+      - UserPoolWebClientId
+      - IdentityPoolId
+      - LoginSubDomain
+    output:
+      file: ./.env
+      format: toml
 
 provider:
   name: aws
@@ -42,3 +59,13 @@ resources:
   - ${file(./infrastructure/web/Distribution.${self:custom.devExperience}.yml), ''}
   - ${file(./infrastructure/web/RecordSets.${self:custom.devExperience}.yml), ''}
   - ${file(./infrastructure/web/Bucket.${self:custom.devExperience}.yml), ''}
+
+  - Outputs:
+      UserPoolId:
+        Value: !Ref UserPool
+      UserPoolWebClientId:
+        Value: !Ref UserPoolClient
+      IdentityPoolId:
+        Value: !Ref IdentityPool
+      LoginSubDomain:
+        Value: !Ref HostedUi

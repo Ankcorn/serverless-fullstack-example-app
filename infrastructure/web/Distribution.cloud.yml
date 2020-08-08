@@ -9,7 +9,7 @@ Resources:
         IPV6Enabled: true
         PriceClass: PriceClass_100
         ViewerCertificate:
-          AcmCertificateArn: arn:aws:acm:us-east-1:260235234243:certificate/ad674a44-e633-4208-98f3-7a85f842eef9
+          AcmCertificateArn: ${ssm:/aws/reference/secretsmanager/owl/certificate/arn~true}
           MinimumProtocolVersion: TLSv1.1_2016
           SslSupportMethod: sni-only
         DefaultCacheBehavior:

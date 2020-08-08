@@ -1,5 +1,5 @@
 # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html
-Resources: &Resources
+Resources:
   DNSRecordIPV4:
     Type: AWS::Route53::RecordSet
     Properties:
