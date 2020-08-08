@@ -1,5 +1,6 @@
 import Auth from '@aws-amplify/auth'
 
+console.log(process.env)
 export const config = {
 	Auth: {
 		mandatorySignIn: true,
@@ -10,7 +11,7 @@ export const config = {
 		oauth: {
 			domain: `${process.env.REACT_APP_LOGIN_SUB_DOMAIN}.auth.${process.env.REACT_APP_AWS_REGION}.amazoncognito.com`,
 			scope: ["email", "openid", "profile"],
-			redirectSignIn: window.origin,
+			redirectSignIn: `${window.origin}/app`,
 			redirectSignOut: window.origin,
 			responseType: "code"
 		}
