@@ -1,4 +1,4 @@
 after_deploy:
-  - yarn website:build
-  - yarn website:sync --bucket=$SEED_SERVICE_NAME-$SEED_STAGE_NAME-website
-  - yarn website:invalidate --distribution-id=EDH0KKIS8GDP1
+  - npm run website:build
+  - npm run website:sync --bucket=$SEED_SERVICE_NAME-$SEED_STAGE_NAME-website
+  - npm run website:invalidate --distribution-id=EDH0KKIS8GDP1
