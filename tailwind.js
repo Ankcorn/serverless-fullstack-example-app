@@ -1,6 +1,5 @@
 module.exports = {
   purge: {
-    mode: 'all',
     content: [
       './src/**/*.js',
       './src/**/*.jsx',
