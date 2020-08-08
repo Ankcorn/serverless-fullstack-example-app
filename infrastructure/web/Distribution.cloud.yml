@@ -8,6 +8,7 @@ Resources:
           - ${self:custom.Domain}
         IPV6Enabled: true
         PriceClass: PriceClass_100
+        HttpVersion: http2
         ViewerCertificate:
           AcmCertificateArn: ${ssm:/aws/reference/secretsmanager/owl/certificate/arn~true}
           MinimumProtocolVersion: TLSv1.1_2016
@@ -16,14 +17,10 @@ Resources:
           TargetOriginId: WebApp
           ViewerProtocolPolicy: "redirect-to-https"
           Compress: true
-          ForwardedValues:
-            QueryString: false
-            Cookies:
-              Forward: none
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
           AllowedMethods:
             - GET
             - HEAD
-            - OPTIONS
         Enabled: true
         Origins:
           - Id: WebApp
