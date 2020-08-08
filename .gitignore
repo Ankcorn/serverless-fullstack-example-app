@@ -89,3 +89,4 @@ typings/
 
 # React build output
 /build
+/src/assets/main.css
