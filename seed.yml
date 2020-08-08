@@ -1,4 +1,4 @@
 after_deploy:
   - npm run website:build
   - npm run website:sync --bucket=$SEED_SERVICE_NAME-$SEED_STAGE_NAME-website
-  - npm run website:invalidate --cloudfront=EDH0KKIS8GDP1
+  - npx dotenv npm run website:invalidate --cloudfront=$REACT_APP_CLOUD_FRONT_DISTRIBUTION

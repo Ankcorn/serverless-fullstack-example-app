@@ -32,3 +32,6 @@ Resources:
               HTTPPort: 80
               HTTPSPort: 443
               OriginProtocolPolicy: http-only
+Outputs:
+  CloudFrontDistribution:
+    Value: !Ref CloudFrontDistribution

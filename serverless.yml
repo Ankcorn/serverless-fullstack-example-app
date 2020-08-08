@@ -30,6 +30,7 @@ custom:
       - UserPoolWebClientId
       - IdentityPoolId
       - LoginSubDomain
+      - CloudFrontDistribution
     output:
       file: ./.env
       format: toml
