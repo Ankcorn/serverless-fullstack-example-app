@@ -25,7 +25,7 @@
     "website:start": "npm run watch:css && react-scripts start",
     "website:build": "npm run build:css && react-scripts build",
     "website:invalidate": "aws cloudfront create-invalidation --distribution-id $REACT_APP_CLOUD_FRONT_DISTRIBUTION --paths '/*'",
-    "website:sync": "aws s3 sync --acl public-read --region eu-west-1 --endpoint-url http://s3-accelerate.amazonaws.com build s3://$npm_config_bucket"
+    "website:sync": "aws s3 sync --acl public-read --region eu-west-1 --endpoint-url http://s3-accelerate.amazonaws.com --cache-control max-age=2592000 build s3://$npm_config_bucket"
   },
   "eslintConfig": {
     "extends": "react-app"

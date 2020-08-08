@@ -7,7 +7,7 @@ function Home() {
 			<header class="text-gray-500 bg-gray-900 body-font">
 				<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 					<a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="#home">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-teal-500 rounded-full" viewBox="0 0 24 24">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-teal-700 rounded-full" viewBox="0 0 24 24">
 							<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
 						</svg>
 						<span class="ml-3 text-xl">Serverless Owl</span>
@@ -33,7 +33,7 @@ function Home() {
       </h1>
 						<p class="mb-8 leading-relaxed">For too long developers strugled fighing with the cloudformation docs to build serverless applications on AWS. No More! Serverless Owl is a curated and thoroughly vetted repository of high quality cloud formation examples so you can spend more time on the meeningfull stuff.</p>
 						<div class="flex justify-center">
-							<button class="inline-flex text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">Button</button>
+							<button class="inline-flex text-white bg-teal-700 border-0 py-2 px-6 focus:outline-none hover:bg-teal-700 rounded text-lg">Button</button>
 							<button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
 						</div>
 					</div>
@@ -50,10 +50,16 @@ function Home() {
 					</div>
 					<div class="lg:w-2/6 md:w-1/2 bg-gray-800 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
 						<h2 class="text-white text-lg font-medium title-font mb-5">Sign Up</h2>
-						<input class="bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4" placeholder="Full Name" type="text" />
-						<input class="bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email" />
-						<button class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg">Button</button>
-						<p class="text-xs text-gray-600 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+						<label class="flex items-baseline justify-between">
+							<p class="w-20">Full name</p>
+							<input class="flex-1 bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4" placeholder="Full Name" type="text" />
+						</label>
+						<label class="flex items-baseline">
+							<p class="w-20">Email</p>
+							<input class="flex-1 bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email" />
+						</label>
+						<button class="text-white bg-teal-700 border-0 py-2 px-8 focus:outline-none hover:bg-teal-700 rounded text-lg">Button</button>
+						<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
 					</div>
 				</div>
 			</section>
@@ -125,9 +131,9 @@ function Home() {
 							<path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
 						</svg>
 						<p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
-						<span class="inline-block h-1 w-10 rounded bg-teal-500 mt-8 mb-6"></span>
+						<span class="inline-block h-1 w-10 rounded bg-teal-700 mt-8 mb-6"></span>
 						<h2 class="text-white font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
-						<p class="text-gray-600">Senior Product Designer</p>
+						<p class="text-gray-400">Senior Product Designer</p>
 					</div>
 				</div>
 			</section>
@@ -197,16 +203,16 @@ function Home() {
 								</svg>
 							</p>
 							<div class="border-t border-gray-700 p-6 text-center rounded-bl-lg">
-								<button class="flex items-center mt-auto text-white bg-teal-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-600 rounded">Button
+								<button class="flex items-center mt-auto text-white bg-teal-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-700 rounded">Button
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
 										<path d="M5 12h14M12 5l7 7-7 7"></path>
 									</svg>
 								</button>
-								<p class="text-xs text-gray-600 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+								<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
 							</div>
 						</div>
 						<div class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-teal-500 relative">
-							<span class="bg-teal-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+							<span class="bg-teal-700 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
 							<div class="px-2 text-center h-48 flex flex-col items-center justify-center">
 								<h3 class="tracking-widest">PRO</h3>
 								<h2 class="text-5xl text-white font-medium flex items-center justify-center leading-none mb-4 mt-2">$38
@@ -260,12 +266,12 @@ function Home() {
 								</svg>
 							</p>
 							<div class="p-6 text-center border-t border-gray-700">
-								<button class="flex items-center mt-auto text-white bg-teal-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-600 rounded">Button
+								<button class="flex items-center mt-auto text-white bg-teal-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-700 rounded">Button
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
 										<path d="M5 12h14M12 5l7 7-7 7"></path>
 									</svg>
 								</button>
-								<p class="text-xs text-gray-600 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+								<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
 							</div>
 						</div>
 						<div class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-700 lg:border-none rounded-lg lg:rounded-none">
@@ -320,12 +326,12 @@ function Home() {
 								</svg>
 							</p>
 							<div class="p-6 text-center border-t border-gray-700">
-								<button class="flex items-center mt-auto text-white bg-teal-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-600 rounded">Button
+								<button class="flex items-center mt-auto text-white bg-teal-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-700 rounded">Button
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
 										<path d="M5 12h14M12 5l7 7-7 7"></path>
 									</svg>
 								</button>
-								<p class="text-xs text-gray-600 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+								<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
 							</div>
 						</div>
 					</div>
@@ -336,97 +342,92 @@ function Home() {
 					<div class="flex flex-wrap md:text-left text-center order-first">
 						<div class="lg:w-1/4 md:w-1/2 w-full px-4">
 							<h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-							<nav class="list-none mb-10">
+							<ol class="list-none mb-10">
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">First Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">First Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Second Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Second Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Third Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Third Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Fourth Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Fourth Link</a>
 								</li>
-							</nav>
+							</ol>
 						</div>
 						<div class="lg:w-1/4 md:w-1/2 w-full px-4">
 							<h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-							<nav class="list-none mb-10">
+							<ol class="list-none mb-10">
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">First Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">First Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Second Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Second Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Third Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Third Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Fourth Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Fourth Link</a>
 								</li>
-							</nav>
+							</ol>
 						</div>
 						<div class="lg:w-1/4 md:w-1/2 w-full px-4">
 							<h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-							<nav class="list-none mb-10">
+							<ol class="list-none mb-10">
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">First Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">First Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Second Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Second Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Third Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Third Link</a>
 								</li>
 								<li>
-									<a class="text-gray-600 hover:text-white" href="#home">Fourth Link</a>
+									<a class="text-gray-400 hover:text-white" href="#home">Fourth Link</a>
 								</li>
-							</nav>
+							</ol>
 						</div>
-						<div class="lg:w-1/4 md:w-1/2 w-full px-4">
-							<h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
-							<div class="flex xl:flex-no-wrap md:flex-no-wrap lg:flex-wrap flex-wrap justify-center md:justify-start">
-								<input class="w-40 sm:w-auto bg-gray-800 rounded text-white xl:mr-4 lg:mr-0 sm:mr-4 mr-2 border border-gray-700 focus:outline-none focus:border-teal-500 text-base py-2 px-4" placeholder="Placeholder" type="text" />
-								<button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded">Button</button>
-							</div>
-							<p class="text-gray-600 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
-          <br class="lg:block hidden" />waistcoat green juice
-        </p>
-						</div>
+
 					</div>
 				</div>
 				<div class="bg-gray-800">
 					<div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
 						<a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="#home">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-teal-500 rounded-full" viewBox="0 0 24 24">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-teal-700 rounded-full" viewBox="0 0 24 24">
 								<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
 							</svg>
 							<span class="ml-3 text-xl">tailblocks</span>
 						</a>
-						<p class="text-sm text-gray-600 sm:ml-6 sm:mt-0 mt-4">© 2020 tailblocks —
+						<p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2020 tailblocks —
         <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
 						</p>
 						<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-							<a class="text-gray-600" href="#home">
-								<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+							<a class="text-gray-400 flex" href="#home">
+								facebook
+								<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
 									<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
 								</svg>
 							</a>
-							<a class="ml-3 text-gray-600" href="#home">
-								<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+							<a class="ml-3 text-gray-400 flex" href="#home">
+								twitter
+								<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
 									<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
 								</svg>
 							</a>
-							<a class="ml-3 text-gray-600" href="#home">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+							<a name="linkedin" class="ml-3 text-gray-400 flex" href="#home">
+								instagram
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
 									<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
 									<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
 								</svg>
 							</a>
-							<a class="ml-3 text-gray-600" href="#home">
-								<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+							<a name="linkedin" class="ml-3 text-gray-400 flex" href="#home">
+								linkedin
+								<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
 									<path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
 									<circle cx="4" cy="4" r="2" stroke="none"></circle>
 								</svg>
