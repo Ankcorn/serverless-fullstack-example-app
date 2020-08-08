@@ -3,7 +3,7 @@ Resources:
   UserPool:
     Type: "AWS::Cognito::UserPool"
     Properties:
-      UserPoolName: ${self:service}-${opt:stage}
+      UserPoolName: ${self:service}-${self:custom.stage}
       AutoVerifiedAttributes:
         - email
       UsernameAttributes:

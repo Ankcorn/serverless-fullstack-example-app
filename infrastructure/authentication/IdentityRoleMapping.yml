@@ -3,8 +3,6 @@ Resources:
   IdentityPoolRoleMapping:
     Type: "AWS::Cognito::IdentityPoolRoleAttachment"
     Properties:
-      IdentityPoolId:
-        Ref: IdentityPool
+      IdentityPoolId: !Ref IdentityPool
       Roles:
-        authenticated:
-          GetAtt: CognitoAuthorizedRole.Arn
+        authenticated: !GetAtt CognitoAuthorizedRole.Arn

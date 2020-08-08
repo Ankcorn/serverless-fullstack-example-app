@@ -1,0 +1,20 @@
+# Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html
+Resources: &Resources
+  DNSRecordIPV4:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Name: ${self:custom.Domain}
+      HostedZoneName: ${self:custom.Domains.production}.
+      Type: A
+      AliasTarget:
+        HostedZoneId: Z2FDTNDATAQYW2
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+  DNSRecordIPV6:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Name: ${self:custom.Domain}
+      HostedZoneName: ${self:custom.Domains.production}.
+      Type: AAAA
+      AliasTarget:
+        HostedZoneId: Z2FDTNDATAQYW2
+        DNSName: !GetAtt CloudFrontDistribution.DomainName

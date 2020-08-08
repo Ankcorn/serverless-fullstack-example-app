@@ -3,10 +3,8 @@ Resources:
   IdentityPool:
     Type: "AWS::Cognito::IdentityPool"
     Properties:
-      IdentityPoolName: ${self:service}-${opt:stage}
+      IdentityPoolName: ${self:service}-${self:custom.stage}
       AllowUnauthenticatedIdentities: false
       CognitoIdentityProviders:
-        - ClientId:
-            Ref: UserPoolClient
-          ProviderName:
-            GetAtt: UserPool.ProviderName
+        - ClientId: !Ref UserPoolClient
+          ProviderName: !GetAtt UserPool.ProviderName

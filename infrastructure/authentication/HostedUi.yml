@@ -3,6 +3,5 @@ Resources:
   HostedUi:
     Type: AWS::Cognito::UserPoolDomain
     Properties:
-      Domain: ${self:service}-${opt:stage}
-      UserPoolId:
-        Ref: UserPool
+      Domain: ${self:service}-${self:custom.stage}
+      UserPoolId: !Ref UserPool

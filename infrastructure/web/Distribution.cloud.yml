@@ -5,8 +5,9 @@ Resources:
     Properties:
       DistributionConfig:
         Aliases:
-          - "dev.serverlessowl.dev"
+          - ${self:custom.Domain}
         IPV6Enabled: true
+        PriceClass: PriceClass_100
         ViewerCertificate:
           AcmCertificateArn: arn:aws:acm:us-east-1:260235234243:certificate/ad674a44-e633-4208-98f3-7a85f842eef9
           MinimumProtocolVersion: TLSv1.1_2016
@@ -26,7 +27,7 @@ Resources:
         Enabled: true
         Origins:
           - Id: WebApp
-            DomainName: ${self:service}-${self:custom.stage}-website.s3-website-eu-west-1.amazonaws.com
+            DomainName: "#{WebsiteBucket}.s3-website-eu-west-1.amazonaws.com"
             CustomOriginConfig:
               HTTPPort: 80
               HTTPSPort: 443

@@ -3,15 +3,13 @@ Resources:
   UserPoolClient:
     Type: AWS::Cognito::UserPoolClient
     Properties:
-      ClientName: ${self:service}-${opt:stage}
-      GenerateSecret: true
+      ClientName: ${self:service}-${self:custom.stage}
       AllowedOAuthFlowsUserPoolClient: true
-      UserPoolId:
-        Ref: UserPool
+      UserPoolId: !Ref UserPool
       SupportedIdentityProviders:
         - COGNITO
       AllowedOAuthFlows:
-        - implicit
+        - code
       AllowedOAuthScopes:
         - email
         - openid
@@ -20,6 +18,6 @@ Resources:
         - ALLOW_REFRESH_TOKEN_AUTH
         - ALLOW_USER_SRP_AUTH
       CallbackURLs:
-        - http://localhost:8000
+        - https://${self:custom.Domain}
       LogoutURLs:
-        - http://localhost:8000
+        - https://${self:custom.Domain}

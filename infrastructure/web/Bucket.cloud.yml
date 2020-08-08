@@ -7,3 +7,5 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: index.html
+      AccelerateConfiguration:
+        AccelerationStatus: Enabled

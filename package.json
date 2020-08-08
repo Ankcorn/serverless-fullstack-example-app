@@ -8,20 +8,23 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "serverless": "^1.74.1",
     "serverless-cloudformation-sub-variables": "^0.2.1",
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-esbuild": "^1.4.0",
-    "serverless-s3-sync": "^1.14.4"
+    "serverless-export-outputs": "^1.0.2"
   },
   "scripts": {
-    "start": "npm run watch:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "website:start": "npm run watch:css && react-scripts start",
+    "website:build": "npm run build:css && react-scripts build",
+    "website:invalidate": "aws cloudfront --profile personal create-invalidation --distribution-id $npm_config_cloudfront --paths '/index.html'",
+    "website:sync": "aws s3 sync --profile personal --acl public-read --region eu-west-1 --endpoint-url http://s3-accelerate.amazonaws.com build s3://$npm_config_bucket"
   },
   "eslintConfig": {
     "extends": "react-app"
