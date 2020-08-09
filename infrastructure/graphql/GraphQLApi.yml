@@ -1,0 +1,11 @@
+# Docs https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html
+Resources:
+  GraphQLApi:
+    Type: "AWS::AppSync::GraphQLApi"
+    Properties:
+      Name: ${self:service}-${self:custom.stage}
+      AuthenticationType: AMAZON_COGNITO_USER_POOLS
+      UserPoolConfig:
+        UserPoolId: !Ref UserPool
+        DefaultAction: DENY
+        AwsRegion: ${self:provider.region}

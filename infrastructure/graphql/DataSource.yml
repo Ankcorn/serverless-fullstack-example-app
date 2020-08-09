@@ -1,0 +1,13 @@
+# Docs https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html
+Resources:
+  DataSource:
+    Type: "AWS::AppSync::DataSource"
+    DependsOn: AppSyncRole
+    Properties:
+      ApiId: !GetAtt GraphQLApi.ApiId
+      Name: ${self:service}_${self:custom.stage}
+      Type: AMAZON_DYNAMODB
+      ServiceRoleArn: !GetAtt AppSyncRole.Arn
+      DynamoDBConfig:
+        TableName: !Ref Table
+        AwsRegion: ${self:provider.region}

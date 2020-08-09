@@ -1,0 +1,7 @@
+# Docs
+Resources:
+  Schema:
+    Type: AWS::AppSync::GraphQLSchema
+    Properties:
+      ApiId: !GetAtt GraphQLApi.ApiId
+      Definition: ${file(./infrastructure/graphql/schema.graphql)}

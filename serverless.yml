@@ -54,13 +54,22 @@ resources:
   - ${file(./infrastructure/authentication/IdentityRoleMapping.yml)}
 
   # Database Resources
-  # - ${file(./infrastructure/database/Dynamo.yml)}
+  - ${file(./infrastructure/database/Dynamo.yml)}
+
+  # GraphQL Resources
+  - ${file(./infrastructure/graphql/Role.yml)}
+  - ${file(./infrastructure/graphql/Schema.yml)}
+  - ${file(./infrastructure/graphql/DataSource.yml)}
+  - ${file(./infrastructure/graphql/GraphQLApi.yml)}
+  - ${file(./infrastructure/graphql/resolvers/MutationAddTodo.yml)}
+  - ${file(./infrastructure/graphql/resolvers/MutationGetTodo.yml)}
 
   # Web Resources
   - ${file(./infrastructure/web/Distribution.${self:custom.devExperience}.yml), ''}
   - ${file(./infrastructure/web/RecordSets.${self:custom.devExperience}.yml), ''}
   - ${file(./infrastructure/web/Bucket.${self:custom.devExperience}.yml), ''}
 
+  # Outputs required by the frontend
   - Outputs:
       UserPoolId:
         Value: !Ref UserPool

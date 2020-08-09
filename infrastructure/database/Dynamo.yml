@@ -3,7 +3,7 @@ Resources:
   Table:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: ${self:service}-${opt:stage}
+      TableName: ${self:service}-${self:custom.stage}
       AttributeDefinitions:
         - AttributeName: pk
           AttributeType: S
