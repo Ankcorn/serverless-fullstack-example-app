@@ -1,5 +1,7 @@
 service: owl
+
 plugins:
+  - serverless-esbuild
   - serverless-cloudformation-sub-variables
   - serverless-export-outputs
 
@@ -44,6 +46,8 @@ provider:
   region: eu-west-1
   stage: ${self:custom.stage}
 
+functions:
+  - ${file(./functions/graphql/add-todo.yml)}
 resources:
   # Cognito Resources
   - ${file(./infrastructure/authentication/UserPool.yml)}
@@ -59,10 +63,8 @@ resources:
   # GraphQL Resources
   - ${file(./infrastructure/graphql/Role.yml)}
   - ${file(./infrastructure/graphql/Schema.yml)}
-  - ${file(./infrastructure/graphql/DataSource.yml)}
+  - ${file(./infrastructure/graphql/DataSources.yml)}
   - ${file(./infrastructure/graphql/GraphQLApi.yml)}
-  - ${file(./infrastructure/graphql/resolvers/MutationAddTodo.yml)}
-  - ${file(./infrastructure/graphql/resolvers/MutationGetTodo.yml)}
 
   # Web Resources
   - ${file(./infrastructure/web/Distribution.${self:custom.devExperience}.yml), ''}
