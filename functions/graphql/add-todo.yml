@@ -1,2 +1,0 @@
-list-shops:
-  handler: functions/graphql/add-todo.handler
