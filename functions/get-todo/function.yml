@@ -1,9 +1,9 @@
 add-todo:
-  handler: functions/add-todo/index.handler
-  role: AddTodoRole
+  handler: functions/get-todo/index.handler
+  role: GetTodoRole
   events:
     - httpApi:
-        method: POST
+        method: GET
         path: /api/todo
         authorizer:
           name: Authorizer

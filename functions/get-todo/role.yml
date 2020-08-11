@@ -19,7 +19,7 @@ Resources:
             Statement:
               - Effect: Allow
                 Action:
-                  - dynamodb:PutItem
+                  - dynamodb:GetItem
                 Resource: !GetAtt Table.Arn
               - Effect: Allow
                 Action:
