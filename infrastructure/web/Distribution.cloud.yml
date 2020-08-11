@@ -21,6 +21,19 @@ Resources:
           AllowedMethods:
             - GET
             - HEAD
+        CacheBehaviors:
+          - TargetOriginId: OwlApi
+            ViewerProtocolPolicy: redirect-to-https
+            PathPattern: /api*
+            CachePolicyId: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad
+            AllowedMethods:
+              - GET
+              - HEAD
+              - OPTIONS
+              - PUT
+              - PATCH
+              - POST
+              - DELETE
         Enabled: true
         Origins:
           - Id: WebApp
@@ -29,6 +42,11 @@ Resources:
               HTTPPort: 80
               HTTPSPort: 443
               OriginProtocolPolicy: http-only
+          - Id: OwlApi
+            DomainName: "#{HttpApi}.execute-api.eu-west-1.amazonaws.com"
+            CustomOriginConfig:
+              HTTPSPort: 443
+              OriginProtocolPolicy: https-only
 Outputs:
   CloudFrontDistribution:
     Value: !Ref CloudFrontDistribution

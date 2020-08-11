@@ -4,6 +4,7 @@ plugins:
   - serverless-esbuild
   - serverless-cloudformation-sub-variables
   - serverless-export-outputs
+  - serverless-offline
 
 custom:
   stage: ${opt:stage, 'dev'}
@@ -39,15 +40,25 @@ custom:
 
 provider:
   name: aws
-  timeout: 30
+  timeout: 28
   memorySize: 1024
   runtime: nodejs12.x
   profile: personal
   region: eu-west-1
   stage: ${self:custom.stage}
+  environment:
+    STAGE: ${self:custom.stage}
+  httpApi:
+    payload: "2.0"
+    authorizers:
+      Authorizer:
+        identitySource: $request.header.Authorization
+        issuerUrl: !GetAtt UserPool.ProviderURL
+        audience: !Ref UserPoolClient
 
 functions:
-  - ${file(./functions/graphql/add-todo.yml)}
+  - ${file(./functions/add-todo/function.yml)}
+
 resources:
   # Cognito Resources
   - ${file(./infrastructure/authentication/UserPool.yml)}
@@ -60,17 +71,13 @@ resources:
   # Database Resources
   - ${file(./infrastructure/database/Dynamo.yml)}
 
-  # GraphQL Resources
-  - ${file(./infrastructure/graphql/Role.yml)}
-  - ${file(./infrastructure/graphql/Schema.yml)}
-  - ${file(./infrastructure/graphql/DataSources.yml)}
-  - ${file(./infrastructure/graphql/GraphQLApi.yml)}
-
   # Web Resources
   - ${file(./infrastructure/web/Distribution.${self:custom.devExperience}.yml), ''}
   - ${file(./infrastructure/web/RecordSets.${self:custom.devExperience}.yml), ''}
   - ${file(./infrastructure/web/Bucket.${self:custom.devExperience}.yml), ''}
 
+  # Roles
+  - ${file(./functions/add-todo/Role.yml)}
   # Outputs required by the frontend
   - Outputs:
       UserPoolId:

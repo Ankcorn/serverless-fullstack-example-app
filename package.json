@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "dynamodb-toolbox": "^0.2.0-beta.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -15,7 +16,8 @@
     "serverless-cloudformation-sub-variables": "^0.2.1",
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-esbuild": "^1.4.0",
-    "serverless-export-outputs": "^1.0.2"
+    "serverless-export-outputs": "^1.0.2",
+    "serverless-offline": "^6.5.0"
   },
   "scripts": {
     "test": "react-scripts test",
