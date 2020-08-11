@@ -90,3 +90,5 @@ typings/
 # React build output
 /build
 /src/assets/main.css
+.build
+.DS_Store
