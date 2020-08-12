@@ -56,10 +56,6 @@ provider:
         issuerUrl: !GetAtt UserPool.ProviderURL
         audience: !Ref UserPoolClient
 
-functions:
-  - ${file(./functions/add-todo/function.yml)}
-  - ${file(./functions/get-todo/function.yml)}
-
 resources:
   # Cognito Resources
   - ${file(./infrastructure/authentication/UserPool.yml)}
@@ -80,6 +76,7 @@ resources:
   # Roles
   - ${file(./functions/add-todo/Role.yml)}
   - ${file(./functions/get-todo/Role.yml)}
+
   # Outputs required by the frontend
   - Outputs:
       UserPoolId:
@@ -90,3 +87,7 @@ resources:
         Value: !Ref IdentityPool
       LoginSubDomain:
         Value: !Ref HostedUi
+
+functions:
+  - ${file(./functions/add-todo/function.yml)}
+  - ${file(./functions/get-todo/function.yml)}
