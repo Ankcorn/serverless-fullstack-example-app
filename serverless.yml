@@ -74,8 +74,8 @@ resources:
   - ${file(./infrastructure/web/Bucket.${self:custom.devExperience}.yml), ''}
 
   # Roles
-  - ${file(./functions/add-todo/Role.yml)}
-  - ${file(./functions/get-todo/Role.yml)}
+  - ${file(./functions/add-todo/role.yml)}
+  - ${file(./functions/get-todo/role.yml)}
 
   # Outputs required by the frontend
   - Outputs:
