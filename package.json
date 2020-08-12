@@ -7,7 +7,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "concurrently": "^5.3.0",
     "dynamodb-toolbox": "^0.2.0-beta.1",
+    "http-proxy-middleware": "^1.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -17,11 +20,14 @@
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-esbuild": "^1.4.0",
     "serverless-export-outputs": "^1.0.2",
-    "serverless-offline": "^6.5.0"
+    "serverless-offline": "^6.5.0",
+    "swr": "^0.3.0"
   },
   "scripts": {
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "start": "concurrently --kill-others 'npm run serverless:start' 'npm run watch:css && REACT_APP_CONNECT=http://localhost:4000 react-scripts start'",
+    "serverless:start": "serverless offline start --noPrependStageInUrl --ignoreJWTSignature --httpPort 4000",
     "build:css": "NODE_ENV=production postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "website:start": "npm run watch:css && react-scripts start",
