@@ -10,7 +10,7 @@ Resources:
         PriceClass: PriceClass_100
         HttpVersion: http2
         ViewerCertificate:
-          AcmCertificateArn: ${ssm:/aws/reference/secretsmanager/owl/certificate/arn~true}
+          AcmCertificateArn: ${self:custom.CertArn}
           MinimumProtocolVersion: TLSv1.1_2016
           SslSupportMethod: sni-only
         DefaultCacheBehavior:

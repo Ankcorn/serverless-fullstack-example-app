@@ -27,10 +27,15 @@ plugins:
 custom:
   stage: ${opt:stage, 'dev'}
 
+  ## Configure these with values from your aws account
+  CertArn: ${ssm:/aws/reference/secretsmanager/owl/certificate/arn~true}
+  HostedZoneName: serverlessowl.dev
+  ## End of your configuration
+
   Domains:
-    default: ${self:custom.stage}.serverlessowl.dev
+    default: ${self:custom.stage}.${self:custom.HostedZoneName}
     local: localhost:3000
-    production: serverlessowl.dev
+    production: ${self:custom.HostedZoneName}
   Domain: ${self:custom.Domains.${self:custom.stage}, self:custom.Domains.default}
 
   Callbacks:
