@@ -51,7 +51,7 @@ custom:
       - UserPoolWebClientId
       - IdentityPoolId
       - LoginSubDomain
-      - CloudFrontDistribution-
+      - CloudFrontDistribution
       - HttpApiUrl
     output:
       file: ./.env
