@@ -1,4 +1,4 @@
-add-todo:
+get-todo:
   handler: functions/get-todo/index.handler
   role: GetTodoRole
   events:

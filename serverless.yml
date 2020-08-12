@@ -1,5 +1,23 @@
 service: owl
 
+provider:
+  name: aws
+  timeout: 28
+  memorySize: 1024
+  runtime: nodejs12.x
+  profile: personal
+  region: eu-west-1
+  stage: ${self:custom.stage}
+  environment:
+    STAGE: ${self:custom.stage}
+  httpApi:
+    payload: "2.0"
+    authorizers:
+      Authorizer:
+        identitySource: $request.header.Authorization
+        issuerUrl: !GetAtt UserPool.ProviderURL
+        audience: !Ref UserPoolClient
+
 plugins:
   - serverless-esbuild
   - serverless-cloudformation-sub-variables
@@ -37,24 +55,6 @@ custom:
     output:
       file: ./.env
       format: toml
-
-provider:
-  name: aws
-  timeout: 28
-  memorySize: 1024
-  runtime: nodejs12.x
-  profile: personal
-  region: eu-west-1
-  stage: ${self:custom.stage}
-  environment:
-    STAGE: ${self:custom.stage}
-  httpApi:
-    payload: "2.0"
-    authorizers:
-      Authorizer:
-        identitySource: $request.header.Authorization
-        issuerUrl: !GetAtt UserPool.ProviderURL
-        audience: !Ref UserPoolClient
 
 resources:
   # Cognito Resources
