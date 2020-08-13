@@ -25,8 +25,7 @@ Resources:
           - TargetOriginId: OwlApi
             ViewerProtocolPolicy: redirect-to-https
             PathPattern: /api*
-            CachePolicyId: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad
-            OriginRequestPolicyId: 216adef6-5c7f-47e4-b989-5492eafa07d3
+            CachePolicyId: d83ac5a5-20f9-49ec-9b2c-a739844ee498
             AllowedMethods:
               - GET
               - HEAD
