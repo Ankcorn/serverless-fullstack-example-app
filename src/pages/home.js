@@ -42,86 +42,84 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section class="text-gray-500 bg-gray-900 body-font">
-				<div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-					<div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-						<h1 class="title-font font-medium text-3xl text-white">Slow-carb next level shoindxgoitch ethical authentic, poko scenester</h1>
-						<p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
-					</div>
-					<div class="lg:w-2/6 md:w-1/2 bg-gray-800 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-						<h2 class="text-white text-lg font-medium title-font mb-5">Sign Up</h2>
-						<label class="flex items-baseline justify-between">
-							<p class="w-20">Full name</p>
-							<input class="flex-1 bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4" placeholder="Full Name" type="text" />
-						</label>
-						<label class="flex items-baseline">
-							<p class="w-20">Email</p>
-							<input class="flex-1 bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email" />
-						</label>
-						<button class="text-white bg-teal-700 border-0 py-2 px-8 focus:outline-none hover:bg-teal-700 rounded text-lg">Button</button>
-						<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="text-gray-500 bg-gray-900 body-font">
+			<section class="text-gray-500 body-font bg-gray-900">
 				<div class="container px-5 py-24 mx-auto">
-					<h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20">Raw Denim Heirloom Man Braid
-            <br class="hidden sm:block" />Selfies Wayfarers
-              </h1>
-					<div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-						<div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-							<div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4 flex-shrink-0">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-									<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-								</svg>
-							</div>
-							<div class="flex-grow pl-6">
-								<h2 class="text-white text-lg title-font font-medium mb-2">Shooting Stars</h2>
-								<p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-								<a class="mt-3 text-teal-500 inline-flex items-center" href="#home">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-										<path d="M5 12h14M12 5l7 7-7 7"></path>
+					<div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+						<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Pitchfork Kickstarter Taxidermy</h1>
+						<p class="lg:w-1/2 w-full leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+					</div>
+					<div class="flex flex-wrap -m-4">
+						<div class="xl:w-1/3 md:w-1/2 p-4">
+							<div class="border border-gray-800 p-6 rounded-lg">
+								<div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4">
+									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+										<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
 									</svg>
-								</a>
+								</div>
+								<h2 class="text-lg text-white font-medium title-font mb-2">Shooting Stars</h2>
+								<p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
 							</div>
 						</div>
-						<div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-							<div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4 flex-shrink-0">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-									<circle cx="6" cy="6" r="3"></circle>
-									<circle cx="6" cy="18" r="3"></circle>
-									<path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-								</svg>
-							</div>
-							<div class="flex-grow pl-6">
-								<h2 class="text-white text-lg title-font font-medium mb-2">The Catalyzer</h2>
-								<p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-								<a class="mt-3 text-teal-500 inline-flex items-center" href="#home">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-										<path d="M5 12h14M12 5l7 7-7 7"></path>
+						<div class="xl:w-1/3 md:w-1/2 p-4">
+							<div class="border border-gray-800 p-6 rounded-lg">
+								<div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4">
+									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+										<circle cx="6" cy="6" r="3"></circle>
+										<circle cx="6" cy="18" r="3"></circle>
+										<path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
 									</svg>
-								</a>
+								</div>
+								<h2 class="text-lg text-white font-medium title-font mb-2">The Catalyzer</h2>
+								<p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
 							</div>
 						</div>
-						<div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-							<div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4 flex-shrink-0">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-									<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-									<circle cx="12" cy="7" r="4"></circle>
-								</svg>
-							</div>
-							<div class="flex-grow pl-6">
-								<h2 class="text-white text-lg title-font font-medium mb-2">Neptune</h2>
-								<p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-								<a class="mt-3 text-teal-500 inline-flex items-center" href="#home">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-										<path d="M5 12h14M12 5l7 7-7 7"></path>
+						<div class="xl:w-1/3 md:w-1/2 p-4">
+							<div class="border border-gray-800 p-6 rounded-lg">
+								<div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4">
+									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+										<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+										<circle cx="12" cy="7" r="4"></circle>
 									</svg>
-								</a>
+								</div>
+								<h2 class="text-lg text-white font-medium title-font mb-2">Neptune</h2>
+								<p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+							</div>
+						</div>
+						<div class="xl:w-1/3 md:w-1/2 p-4">
+							<div class="border border-gray-800 p-6 rounded-lg">
+								<div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4">
+									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+										<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+									</svg>
+								</div>
+								<h2 class="text-lg text-white font-medium title-font mb-2">Melanchole</h2>
+								<p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+							</div>
+						</div>
+						<div class="xl:w-1/3 md:w-1/2 p-4">
+							<div class="border border-gray-800 p-6 rounded-lg">
+								<div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4">
+									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+										<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+									</svg>
+								</div>
+								<h2 class="text-lg text-white font-medium title-font mb-2">Bunker</h2>
+								<p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+							</div>
+						</div>
+						<div class="xl:w-1/3 md:w-1/2 p-4">
+							<div class="border border-gray-800 p-6 rounded-lg">
+								<div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-teal-400 mb-4">
+									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+										<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+									</svg>
+								</div>
+								<h2 class="text-lg text-white font-medium title-font mb-2">Ramona Falls</h2>
+								<p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
 							</div>
 						</div>
 					</div>
+					<button class="flex mx-auto mt-16 text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg">Button</button>
 				</div>
 			</section>
 			<section class="text-gray-500 bg-gray-900 body-font">
@@ -137,303 +135,41 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section class="text-gray-500 bg-gray-900 body-font overflow-hidden">
-				<div class="container px-5 py-24 mx-auto flex flex-wrap">
-					<div class="lg:w-1/4 mt-48 hidden lg:block">
-						<div class="mt-px border-t border-gray-700 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
-							<p class="bg-gray-800 text-white h-12 text-center px-4 flex items-center justify-start -mt-px">Fingerstache disrupt</p>
-							<p class="text-white h-12 text-center px-4 flex items-center justify-start">Franzen hashtag</p>
-							<p class="bg-gray-800 text-white h-12 text-center px-4 flex items-center justify-start">Tilde art party</p>
-							<p class="text-white h-12 text-center px-4 flex items-center justify-start">Banh mi cornhole</p>
-							<p class="bg-gray-800 text-white h-12 text-center px-4 flex items-center justify-start">Waistcoat squid hexagon</p>
-							<p class="text-white h-12 text-center px-4 flex items-center justify-start">Pinterest occupy authentic</p>
-							<p class="bg-gray-800 text-white h-12 text-center px-4 flex items-center justify-start">Brooklyn helvetica</p>
-							<p class="text-white h-12 text-center px-4 flex items-center justify-start">Long Feature Two</p>
-							<p class="bg-gray-800 text-white h-12 text-center px-4 flex items-center justify-start">Feature One</p>
-						</div>
-					</div>
-					<div class="flex lg:w-3/4 w-full flex-wrap lg:border border-gray-700 rounded-lg">
-						<div class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-700 lg:border-none rounded-lg lg:rounded-none relative">
-							<div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-								<h3 class="tracking-widest">START</h3>
-								<h2 class="text-5xl text-white font-medium leading-none mb-4 mt-2">Free</h2>
-								<span class="text-sm text-gray-500">Next 3 months</span>
-							</div>
-							<p class="bg-gray-800 text-gray-500 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-700">Schlitz single-origin</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="h-12 text-gray-500 px-6 text-center leading-relaxed flex items-center justify-center">Feature</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<div class="border-t border-gray-700 p-6 text-center rounded-bl-lg">
-								<button class="flex items-center mt-auto text-white bg-teal-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-700 rounded">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-										<path d="M5 12h14M12 5l7 7-7 7"></path>
-									</svg>
-								</button>
-								<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-							</div>
-						</div>
-						<div class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-teal-500 relative">
-							<span class="bg-teal-700 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
-							<div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-								<h3 class="tracking-widest">PRO</h3>
-								<h2 class="text-5xl text-white font-medium flex items-center justify-center leading-none mb-4 mt-2">$38
-            <span class="text-gray-500 text-base ml-1">/mo</span>
-								</h2>
-								<span class="text-sm text-gray-500">Charging $456 per year</span>
-							</div>
-							<p class="bg-gray-800 text-gray-500 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-700">Schlitz single-origin</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="h-12 text-gray-500 text-center leading-relaxed flex items-center justify-center">Feature</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<div class="p-6 text-center border-t border-gray-700">
-								<button class="flex items-center mt-auto text-white bg-teal-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-700 rounded">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-										<path d="M5 12h14M12 5l7 7-7 7"></path>
-									</svg>
-								</button>
-								<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-							</div>
-						</div>
-						<div class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-700 lg:border-none rounded-lg lg:rounded-none">
-							<div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-								<h3 class="tracking-widest">BUSINESS</h3>
-								<h2 class="text-5xl text-white font-medium flex items-center justify-center leading-none mb-4 mt-2">$54
-            <span class="text-gray-500 text-base ml-1">/mo</span>
-								</h2>
-								<span class="text-sm text-gray-500">Charging $648 per year</span>
-							</div>
-							<p class="bg-gray-800 text-gray-500 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-700">Schlitz single-origin</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="h-12 text-gray-500 text-center leading-relaxed flex items-center justify-center">Feature</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<span class="w-5 h-5 inline-flex items-center justify-center bg-gray-700 text-white rounded-full flex-shrink-0">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-										<path d="M20 6L9 17l-5-5"></path>
-									</svg>
-								</span>
-							</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<p class="bg-gray-800 text-gray-500 text-center h-12 flex items-center justify-center">
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-									<path d="M18 6L6 18M6 6l12 12"></path>
-								</svg>
-							</p>
-							<div class="p-6 text-center border-t border-gray-700">
-								<button class="flex items-center mt-auto text-white bg-teal-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-teal-700 rounded">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-										<path d="M5 12h14M12 5l7 7-7 7"></path>
-									</svg>
-								</button>
-								<p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 			<footer class="text-gray-500 bg-gray-900 body-font">
-				<div class="container px-5 py-24 mx-auto">
-					<div class="flex flex-wrap md:text-left text-center order-first">
-						<div class="lg:w-1/4 md:w-1/2 w-full px-4">
-							<h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-							<ol class="list-none mb-10">
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">First Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Second Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Third Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Fourth Link</a>
-								</li>
-							</ol>
-						</div>
-						<div class="lg:w-1/4 md:w-1/2 w-full px-4">
-							<h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-							<ol class="list-none mb-10">
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">First Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Second Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Third Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Fourth Link</a>
-								</li>
-							</ol>
-						</div>
-						<div class="lg:w-1/4 md:w-1/2 w-full px-4">
-							<h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-							<ol class="list-none mb-10">
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">First Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Second Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Third Link</a>
-								</li>
-								<li>
-									<a class="text-gray-400 hover:text-white" href="#home">Fourth Link</a>
-								</li>
-							</ol>
-						</div>
-
-					</div>
-				</div>
-				<div class="bg-gray-800">
-					<div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-						<a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="#home">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-teal-700 rounded-full" viewBox="0 0 24 24">
-								<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+				<div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+					<a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-teal-500 rounded-full" viewBox="0 0 24 24">
+							<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+						</svg>
+						<span class="ml-3 text-xl">tailblocks</span>
+					</a>
+					<p class="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 tailblocks —
+      <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
+					</p>
+					<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+						<a class="text-gray-600">
+							<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+								<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
 							</svg>
-							<span class="ml-3 text-xl">tailblocks</span>
 						</a>
-						<p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2020 tailblocks —
-        <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
-						</p>
-						<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-							<a class="text-gray-400 flex" href="#home">
-								facebook
-								<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
-									<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-								</svg>
-							</a>
-							<a class="ml-3 text-gray-400 flex" href="#home">
-								twitter
-								<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
-									<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-								</svg>
-							</a>
-							<a name="linkedin" class="ml-3 text-gray-400 flex" href="#home">
-								instagram
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
-									<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-									<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-								</svg>
-							</a>
-							<a name="linkedin" class="ml-3 text-gray-400 flex" href="#home">
-								linkedin
-								<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5 ml-2" viewBox="0 0 24 24">
-									<path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-									<circle cx="4" cy="4" r="2" stroke="none"></circle>
-								</svg>
-							</a>
-						</span>
-					</div>
+						<a class="ml-3 text-gray-600">
+							<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+								<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+							</svg>
+						</a>
+						<a class="ml-3 text-gray-600">
+							<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+								<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+								<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+							</svg>
+						</a>
+						<a class="ml-3 text-gray-600">
+							<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+								<path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+								<circle cx="4" cy="4" r="2" stroke="none"></circle>
+							</svg>
+						</a>
+					</span>
 				</div>
 			</footer>
 		</div>
