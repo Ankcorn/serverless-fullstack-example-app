@@ -21,7 +21,7 @@ function Home() {
 						</div>
 					</div>
 					<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-						<img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
+						<img class="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1498084393753-b411b2d26b34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=720&h=600&q=80" />
 					</div>
 				</div>
 			</section>
