@@ -26,7 +26,7 @@ function App() {
 	const [newTodo, setNewTodo] = useState();
 	const user = usePrivate();
 	const { loading, todos, create, revalidate } = useTodos();
-	console.log(todos)
+
 	if (!user || loading) {
 		return null;
 	}
