@@ -11,7 +11,7 @@ async function get(url) {
 }
 
 async function post(url, body) {
-	return axios.get(url, body, {
+	return axios.post(url, body, {
 		headers: {
 			authorization: `Bearer ${(await Auth.currentSession()).getIdToken().getJwtToken()}`
 		}
@@ -19,9 +19,6 @@ async function post(url, body) {
 }
 
 export default function useTodos() {
-	const { data, loading } = useSWR('/api/todo', get);
-
-
-
-	return { loading, todos: data, create: (body) => post('api/todo', body) }
+	const { data, loading, revalidate } = useSWR('/api/todo', get);
+	return { loading, todos: data && data.data.Items, create: (body) => post('api/todo', body), revalidate }
 }
