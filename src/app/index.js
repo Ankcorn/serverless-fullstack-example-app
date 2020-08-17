@@ -1,26 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Auth from '@aws-amplify/auth';
+import React, { useState } from "react";
+import usePrivate from '../hooks/usePrivate';
 import useTodos from '../hooks/useTodos';
 import TodoSection from '../components/todo-section';
 import { differenceInDays } from 'date-fns';
-function usePrivate() {
-	const [state, setState] = useState();
-
-	async function getSession() {
-		try {
-			const auth = await Auth.currentSession();
-			setState(auth.idToken.payload);
-		} catch (e) {
-			await Auth.federatedSignIn({ provider: 'COGNITO' });
-		}
-	}
-
-	useEffect(() => {
-		getSession();
-	}, []);
-
-	return state;
-}
 
 function App() {
 	const [newTodo, setNewTodo] = useState();
