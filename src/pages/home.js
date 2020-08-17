@@ -36,27 +36,29 @@ function Home() {
 					},
 					{
 						name: "Node.js",
-						description: "Zero-friction serverless infrastructure deployment as code",
-						link: "https://www.serverless.com/",
+						description: "An asynchronous event-driven JavaScript runtime, designed to build scalable network applications.",
+						link: "https://nodejs.org/en/about/",
 						icon: Node
 					},
 					{
 						name: "React",
-						description: "Serverless web hosting, compute, and storage.",
-						link: "https://aws.amazon.com/",
+						description: "A JavaScript library for building user interf.aces",
+						link: "https://reactjs.org/",
 						icon: ReactLogo
 					},
 					{
-						name: "Serverless Framework",
-						description: "Zero-friction serverless infrastructure deployment as code",
-						link: "https://www.serverless.com/",
+						name: "Tailwind CSS",
+						description: "A utility-first CSS framework for rapidly building custom designs.",
+						link: "https://tailwindcss.com/",
 						icon: Tailwind
 					},
 					{
-						name: "Node.js",
-						description: "Zero-friction serverless infrastructure deployment as code",
-						link: "https://www.serverless.com/",
-						icon: Node
+						name: "Tailblocks",
+						description: "Ready-to-use Tailwind CSS blocks.",
+						link: "https://mertjf.github.io/tailblocks/",
+						icon: () => (<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded" viewBox="0 0 24 24">
+							<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+						</svg>)
 					},
 				]}
 			/>
