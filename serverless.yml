@@ -1,5 +1,8 @@
 service: owl
 
+package:
+  individually: true
+
 provider:
   name: aws
   timeout: 28
@@ -22,6 +25,7 @@ plugins:
   - serverless-esbuild
   - serverless-cloudformation-sub-variables
   - serverless-export-outputs
+  - serverless-cloudside-plugin
   - serverless-offline
 
 custom:
