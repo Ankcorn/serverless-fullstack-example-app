@@ -1,8 +1,9 @@
 const { Table, Entity } = require('dynamodb-toolbox');
 
 const DynamoDB = require('aws-sdk/clients/dynamodb')
-const DocumentClient = new DynamoDB.DocumentClient()
+const DocumentClient = new DynamoDB.DocumentClient({region: 'eu-west-1'})
 
+console.log(`owl-${process.env.STAGE}`)
 const OwlTable = new Table({
 	name: `owl-${process.env.STAGE}`,
 	partitionKey: 'pk',

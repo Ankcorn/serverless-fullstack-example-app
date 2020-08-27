@@ -14,7 +14,6 @@ provider:
   environment:
     STAGE: ${self:custom.stage}
   httpApi:
-    payload: "2.0"
     authorizers:
       Authorizer:
         identitySource: $request.header.Authorization
@@ -29,7 +28,7 @@ plugins:
   - serverless-offline
 
 custom:
-  stage: ${opt:stage, 'dev'}
+  stage: ${opt:stage, 'local'}
 
   ## Configure these with values from your aws account
   CertArn: ${ssm:/aws/reference/secretsmanager/owl/certificate/arn~true}
