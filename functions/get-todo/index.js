@@ -4,7 +4,6 @@ import tracer from 'tracer';
 const logger = tracer.colorConsole()
 export async function handler(e) {
 	try {
-		logger.info('test', e.requestContext.authorizer.claims)
 		logger.info('Request for todo list', e.requestContext.authorizer.claims)
 		const todo = await Todo.query(e.requestContext.authorizer.claims.sub);
 		return {
