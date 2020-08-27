@@ -1,13 +1,24 @@
 import { Todo } from '../../data/dynamodb'
+import tracer from 'tracer';
 
+const logger = tracer.colorConsole()
 export async function handler(e) {
-	await Todo.put({
-		id: e.requestContext.authorizer.claims.sub,
-		status: 'todo',
-		date_added: Date.now(),
-		message: JSON.parse(e.body).message
-	});
-	return {
-		statusCode: 200
+	
+	try {
+		await Todo.put({
+			id: e.requestContext.authorizer.claims.sub,
+			status: 'todo',
+			date_added: Date.now(),
+			message: JSON.parse(e.body).message
+		});
+		return {
+			statusCode: 200
+		}
+	} catch(e) {
+		logger.error('Failed to add a todo', e)
+		return {
+			statusCode: 500
+		}
 	}
+	
 }
