@@ -1,8 +1,6 @@
 add-todo:
   handler: functions/add-todo/index.handler
   role: AddTodoRole
-  environment:
-    DISTRIBUTION_ID: !Ref CloudFrontDistribution
   events:
     - httpApi:
         method: POST
