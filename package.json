@@ -16,7 +16,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "serverless": "^1.74.1",
+    "serverless": "^3.25.1",
     "serverless-cloudformation-sub-variables": "^0.2.1",
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-esbuild": "^1.4.0",
