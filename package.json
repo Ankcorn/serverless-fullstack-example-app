@@ -21,7 +21,7 @@
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-esbuild": "^1.4.0",
     "serverless-export-outputs": "^1.0.2",
-    "serverless-offline": "^6.5.0",
+    "serverless-offline": "^12.0.3",
     "swr": "^0.3.0",
     "tracer": "^1.1.3"
   },
